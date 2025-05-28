@@ -307,6 +307,25 @@ def show_directory():
     st.sidebar.markdown("## 3. 社交关系可视化")  # 二级标题
     st.sidebar.markdown("- **职业社交圈**")
     st.sidebar.markdown("- **从属社交圈**")
+
+    st.markdown(
+        """
+        <style>
+        /* 设置全局背景样式 */
+        .stApp {
+            background-image: url('media/background.jpg'); /* 替换为你的图片路径 */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh; /* 确保背景图片覆盖整个页面 */
+            background-color: rgba(255, 255, 255, 0.5); /* 设置透明层，调整透明度 */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
 # 主角介绍
 def show_characters():
     p1 = "media/哈利.jpg"
