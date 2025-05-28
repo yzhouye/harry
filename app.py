@@ -308,23 +308,16 @@ def show_directory():
     st.sidebar.markdown("- **职业社交圈**")
     st.sidebar.markdown("- **从属社交圈**")
 
-    st.markdown(
-        """
+    page_bg_img = '''
         <style>
-        /* 设置全局背景样式 */
-        .stApp {
-            background-image: url('media/background.jpg'); /* 替换为你的图片路径 */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            min-height: 100vh; /* 确保背景图片覆盖整个页面 */
-            background-color: rgba(255, 255, 255, 0.5); /* 设置透明层，调整透明度 */
+        body {
+        background-image: url("media/background.jpg");
+        background-size: cover;
         }
         </style>
-        """,
-        unsafe_allow_html=True,
-    )
+        '''
+        
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # 主角介绍
 def show_characters():
