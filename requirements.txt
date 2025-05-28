@@ -1,8 +1,7 @@
-streamlit
-networkx
-matplotlib
-jsonschema
-pandas
-numpy
-collections
-plotly
+streamlit==1.45.1
+networkx==3.4.2
+numpy==1.26.4
+matplotlib==3.9.2
+pandas==2.2.2
+plotly==6.1.1
+scipy==1.15.3
